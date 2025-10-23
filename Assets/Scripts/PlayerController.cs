@@ -14,5 +14,7 @@ public class PlayerController : MonoBehaviour {
 
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
         transform.Rotate(Vector3.up, Time.deltaTime * rightSpeed * horizontalInput);
+
+        Debug.Log($"patwari: update here");
     }
 }
