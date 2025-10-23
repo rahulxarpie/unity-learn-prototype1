@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private float forwardInput;
 
     // Comment 1 here
+    // comment 2 here
 
     private void Update() {
         horizontalInput = Input.GetAxis("Horizontal");
