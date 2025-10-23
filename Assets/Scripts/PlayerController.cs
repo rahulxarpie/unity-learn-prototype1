@@ -8,13 +8,13 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private float horizontalInput;
     [SerializeField] private float forwardInput;
 
+    // Comment 1 here
+
     private void Update() {
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
 
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
         transform.Rotate(Vector3.up, Time.deltaTime * rightSpeed * horizontalInput);
-
-        Debug.Log($"patwari: update here");
     }
 }
